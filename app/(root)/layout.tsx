@@ -1,5 +1,14 @@
- import StreamVideoProvider from '@/providers/StreamClientProvider'
+import StreamVideoProvider from '@/providers/StreamClientProvider'
+import { Metadata } from 'next';
 import React, {ReactNode} from 'react'
+
+export const metadata: Metadata = {
+  title: "Blue Conference",
+  description: "Video Calling App",
+  icons: {
+    icon:'/icons/blue-canoe-logo.svg'
+  }
+};
  
  const RootLayout = ({children}: {children:ReactNode}) => {
    return (
